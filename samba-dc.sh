@@ -124,4 +124,5 @@ if [[ "$add_cname" =~ ^[yYдД] ]]; then
     done
 fi
 
+systemctl enable bind --now
 echo -e "\nНастройка завершена успешно!"
