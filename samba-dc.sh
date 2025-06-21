@@ -15,6 +15,9 @@ echo 'KRB5RCACHETYPE="none"' >> /etc/sysconfig/bind
 # 3. Остановка BIND
 systemctl stop bind
 
+#Заметил, что на некоторых версиях альта самба уже включена после установки
+systemctl stop samba
+
 # 4-6. Очистка старых конфигураций
 rm -f /etc/samba/smb.conf
 rm -rf /var/lib/samba
